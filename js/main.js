@@ -8,12 +8,11 @@ const outputOffertaEl=document.querySelector('#offerta-output');
 const outputCarrozzaEl=document.querySelector('#carrozza-output');
 const outputCpEl=document.querySelector('#cp-output');
 const outputCostoEl=document.querySelector('#costo-output');
-
+const ticketBoxEl=document.querySelector("#section-ticket");
 btnGeneraEl.addEventListener("click",priceTicket);
-btnAnnullaEl.addEventListener("click",svuotaTicket)
+btnAnnullaEl.addEventListener("click",svuotaTicket);
 
 function priceTicket(){
-    
     if(inputNomeEl.value==""){
         alert("inserisci nome e cognome");
         return;
@@ -36,6 +35,7 @@ function priceTicket(){
     outputCostoEl.innerHTML=`${costoBiglietto.toFixed(2)} €`;
     outputCarrozzaEl.innerHTML=(Math.random() *1000).toFixed(0);
     outputCpEl.innerHTML=(Math.random() *100000).toFixed(0);
+    ticketBoxEl.style.setProperty("left",0);
 
     
 }
@@ -48,6 +48,7 @@ function svuotaTicket(){
     outputCarrozzaEl.innerHTML="";
     outputCpEl.innerHTML="";
     outputCostoEl.innerHTML="";
+    ticketBoxEl.style.setProperty("left","-100%");
 }
 
 

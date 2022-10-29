@@ -2,6 +2,7 @@ body{
     width: 100vw;
     height: 100vh;
     background-color: rgba(35, 22, 211, 0.705);
+    overflow-x: hidden;
 }
 
 .output{
@@ -9,4 +10,11 @@ body{
 }
 section{
     padding: 2rem 0;
+}
+
+#section-ticket{
+    position: relative;
+    left: -100%;
+    transition: all .2s;
+
 }
