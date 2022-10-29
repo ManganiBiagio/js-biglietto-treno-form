@@ -13,6 +13,15 @@ btnGeneraEl.addEventListener("click",priceTicket);
 btnAnnullaEl.addEventListener("click",svuotaTicket)
 
 function priceTicket(){
+    
+    if(inputNomeEl.value==""){
+        alert("inserisci nome e cognome");
+        return;
+    }
+    if(inputKmEl.value==""){
+        alert("inserisci Km da percorrere");
+        return;
+    }
     let costoBiglietto=inputKmEl.value * .21;
     outputNomeEl.innerHTML=inputNomeEl.value;
     outputOffertaEl.innerHTML="-";
@@ -24,7 +33,7 @@ function priceTicket(){
         costoBiglietto *=.6;
         outputOffertaEl.innerHTML="Over-65";
     }
-    outputCostoEl.innerHTML=costoBiglietto.toFixed(2);
+    outputCostoEl.innerHTML=`${costoBiglietto.toFixed(2)} €`;
     outputCarrozzaEl.innerHTML=(Math.random() *1000).toFixed(0);
     outputCpEl.innerHTML=(Math.random() *100000).toFixed(0);
 

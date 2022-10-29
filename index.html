@@ -12,7 +12,7 @@
     <section>
         <div class="container text-center">
             <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-            <div>
+            <div class="bg-white p-3 rounded-2">
                 <div class="row">
                     <div class="col">
                         <h4>Nome Cognome</h4>
@@ -38,11 +38,12 @@
                     </div>
 
                 </div>
+                <div class="py-3">
+                    <button type="button" class="btn btn-primary" id="btn-genera">Genera</button>
+                    <button type="button" class="btn btn-light " id="btn-annulla">Annulla</button>
+                </div>
             </div>
-            <div class="py-3">
-                <button type="button" class="btn btn-primary" id="btn-genera">Genera</button>
-                <button type="button" class="btn btn-light " id="btn-annulla">Annulla</button>
-            </div>
+            
             
         </div>
 
@@ -50,43 +51,43 @@
     <section>
         <div class="container text-center">
             <h1>IL TUO BIGLIETTO</h1>
-            <div class="text-start">
+            <div class="text-start bg-white p-3 rounded-2">
                 <div>DETTAGLIO PASSEGGERI</div>
-                <div class="row py-3">
+                <div class="row py-3 border">
                     <div class="col">
                         <div>
                             NOME PASSEGGERO
                         </div>
                         <!-- ouput nome passeggero  -->
-                        <div id="nome-output"></div>
+                        <div id="nome-output" class="output"></div>
                     </div>
                     <div class="col">
                         <div>
                             Offerta
                         </div>
                         <!-- ouput offerta usata  -->
-                        <div id="offerta-output"></div>
+                        <div id="offerta-output" class="output"></div>
                     </div>
                     <div class="col">
                         <div>
                             Carrozza
                         </div>
                         <!-- ouput carrozza -->
-                        <div id="carrozza-output"></div>
+                        <div id="carrozza-output" class="output"></div>
                     </div>
                     <div class="col">
                         <div>
                             Codice CP
                         </div>
                         <!-- ouput Codice CP -->
-                        <div id="cp-output"></div>
+                        <div id="cp-output" class="output"></div>
                     </div>
                     <div class="col">
                         <div>
                             Costo biglietto
                         </div>
                         <!-- ouput costo biglietto -->
-                        <div id="costo-output"></div>
+                        <div id="costo-output" class="output"></div>
                     </div>
                 </div>
             </div>
