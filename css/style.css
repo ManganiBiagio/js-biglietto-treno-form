@@ -18,3 +18,19 @@ section{
     transition: all .2s;
 
 }
+
+.svg-box{
+    height: 200px;
+    position: relative;
+    left: -100%;
+    transition: all .2s;
+    
+}
+#Livello-2{
+    opacity: 0;
+    transition: all 10s;
+}
+#Livello-3{
+    opacity: 0;
+    transition: all 3s;
+}

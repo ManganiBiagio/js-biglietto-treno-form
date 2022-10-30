@@ -9,8 +9,13 @@ const outputCarrozzaEl=document.querySelector('#carrozza-output');
 const outputCpEl=document.querySelector('#cp-output');
 const outputCostoEl=document.querySelector('#costo-output');
 const ticketBoxEl=document.querySelector("#section-ticket");
+const trainBoxEl=document.querySelector(".svg-box");
+const lvl2Train=document.querySelector("#Livello-2");
+const lvl3Train=document.querySelector("#Livello-3");
 btnGeneraEl.addEventListener("click",priceTicket);
 btnAnnullaEl.addEventListener("click",svuotaTicket);
+
+
 
 function priceTicket(){
     if(inputNomeEl.value==""){
@@ -36,6 +41,10 @@ function priceTicket(){
     outputCarrozzaEl.innerHTML=(Math.random() *1000).toFixed(0);
     outputCpEl.innerHTML=(Math.random() *100000).toFixed(0);
     ticketBoxEl.style.setProperty("left",0);
+    trainBoxEl.style.setProperty("left",0);
+    lvl2Train.style.setProperty("opacity",1);
+    lvl3Train.style.setProperty("opacity",1);
+
 
     
 }
@@ -49,6 +58,9 @@ function svuotaTicket(){
     outputCpEl.innerHTML="";
     outputCostoEl.innerHTML="";
     ticketBoxEl.style.setProperty("left","-100%");
+    trainBoxEl.style.setProperty("left","-100%");
+    lvl2Train.style.setProperty("opacity",0);
+    lvl3Train.style.setProperty("opacity",0);
 }
 
 
