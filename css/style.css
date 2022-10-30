@@ -28,9 +28,9 @@ section{
 }
 #Livello-2{
     opacity: 0;
-    transition: all 10s;
+    transition: all 5s;
 }
 #Livello-3{
     opacity: 0;
-    transition: all 3s;
+    transition: all 10s;
 }
